@@ -1,0 +1,18 @@
+/* choose the font */
+$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+$navbar-default-brand-color: Blue;
+
+
+@import 'bootstrap';
+
+body{
+	padding-top: 100px;
+}
+
+@import 'bootstrap-responsive';
+
+.footer{
+	margin-top: 100px;
+}

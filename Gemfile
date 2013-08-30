@@ -7,7 +7,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
 gem 'protected_attributes'
-
+gem 'sqlite3'
 
 # Use sqlite3 as the database for Active Record
 

@@ -1,8 +1,12 @@
 <!-- Main component for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1>Welcome to Sophie's World</h1>
-        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar">Learn More! &raquo;</a>
-        </p>
-      </div>
+   <% if user_signed_in? %>   
+     <h1>You're successfully logged in!</h1>
+   <% else %>
+    <div class="hero-unit">
+       <h1>Welcome to Sophie's World</h1>
+       <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+       <p>
+          <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-lg btn-primary" %>
+       </p>
+    </div>
+    <% end %>
